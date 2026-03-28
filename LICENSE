@@ -19,3 +19,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Third-Party Software Notice
+This product includes software derived from the pigpio library,
+including irrp.py.
+pigpio is released under the Unlicense.
+Copyright (c) 2012-2020, Joan.
+For more information:
+http://abyz.me.uk/rpi/pigpio/
+
+■ライセンスについて
+本製品に含まれるプログラムはMITライセンスのもとで提供されています。
+また、一部機能において、pigpioライブラリ由来のソフトウェア（irrp.py）を使用しています。
+これらはUnlicense（パブリックドメイン相当）で提供されています。
+
+■免責事項
+本ソフトウェアは現状有姿で提供され、いかなる保証も行いません。
