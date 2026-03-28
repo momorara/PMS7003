@@ -8,6 +8,7 @@
 2026/03/08  pollenの値がうまくいかないので、削除
 2026/03/22  config対応
 2026/03/24  LED対応
+2026/03/28  ambientタイムアウトを追加
 """
 
 import time
@@ -82,8 +83,8 @@ def sen_ambient(data):
         json_data = json.dumps(data)
         conn = http.client.HTTPSConnection(
             "ambidata.io",
-            context=ssl._create_unverified_context()
-            )
+            timeout=5
+        )
         headers = {"Content-Type": "application/json"}
         # mbient err処理
         try:
