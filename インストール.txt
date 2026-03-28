@@ -1,0 +1,25 @@
+
+sudo raspi-configにて
+Serial Port
+ログインシェル：NO
+シリアル有効：YES
+
+reboot
+
+
+機種、システムによってシリアルディバイスが違うようなので、
+ls -l /dev/serial* として、
+lrwxrwxrwx 1 root root 5 Mar  3 09:25 /dev/serial0 -> ttyS0
+
+Pollen.pyのシリアルディバイスを
+
+"/dev/ttyAMA0"
+か
+/dev/serial0
+か
+"/dev/ttyS0"
+などに書き換える
+
+一応、プログラムで上記3つのディバイスには対応しているが、
+エラーが出る場合は、変更してください。
+
